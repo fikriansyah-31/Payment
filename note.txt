@@ -1,0 +1,33 @@
+// useState adalah sebuah Hook, dan akan mengembalikan nilai dari state 
+
+// useEffect React hooks useEffect digunakan untuk menambahkan side effect ke function komponen.
+
+// useParams React hooks useParams digunakan untuk mengambil nilai parameter dari URL.
+
+// useHistory React hooks useHistory digunakan untuk mengambil history dari URL.
+
+// useNavigate React hooks useNavigate digunakan untuk mengirimkan history ke URL.
+
+// useLocation React hooks useLocation digunakan untuk mengambil lokasi dari URL.
+
+// metode reduce() menerapkan fungsi secara bersamaan terhadap dua nilai array (dari kiri ke kanan) untuk menguranginya menjadi satu nilai.
+
+------------------------------------------------------------------------
+
+Membuat Table Dumbmerch Sequalize :
+
+npx sequelize-cli model:generate --name user --attributes email:string,password:string,name:string,status:string //Table user
+
+npx sequelize-cli model:generate --name profile --attributes phone:string,gender:string,address:string,idUser:integer //table profile
+
+npx sequelize-cli model:generate --name product --attributes name:string,desc:text,price:integer,image:string,qty:integer,idUser:integer
+
+npx sequelize-cli model:generate --name transaction --attributes idProduct:integer,idBuyer:integer,idSeller:integer,price:integer,status:string
+
+npx sequelize-cli model:generate --name category --attributes name:string
+
+npx sequelize-cli model:generate --name productCategory --attributes idProduct:integer,idCategory:integer
+
+npx sequelize-cli model:generate --name chat --attributes message:text,idSender:integer,idRecipient:integer
+
+Map : Mapping digunakan untuk menampilkan data yang berjumlah lebih dari satu atau banyak
